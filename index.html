@@ -5,22 +5,22 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
+    <script src="js/bigtext.js"></script>
     <script src="js/scripts.js"></script>
     <title>Roman Number Converter</title>
   </head>
   <body>
     <div class="container">
+      <h1>Roman Numeral Converter</h1>
 
     <form id="numberForm">
       <div class="form-group">
-        <label class="form-label" for="number">Enter number to convert:</label>
-        <input class="form-control" type="number" name="number" id="number" autofocus required>
+        <input class="form-control" type="number" name="number" id="number" placeholder="Enter a number to convert" autofocus required>
       </div>
-      <button type="submit" class="btn btn-success btn-sm">Convert</button>
     </form>
 
-    <div id="results">
-      <p></p>
+    <div id="results" class="bigtext">
+      <span></span>
     </div>
 
     </div>

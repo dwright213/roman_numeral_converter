@@ -9,6 +9,13 @@ body {
   margin-left: 0px;
 }
 
+.bigtext {
+    font-family: Helvetica, Arial;
+}
+.bigtext > div {
+    line-height: 0.95rem;
+}
+
 #results img {
   width: 75px;
   margin: 10px;

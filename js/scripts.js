@@ -50,18 +50,19 @@ var convert = function(number) {
 }
 
 $(document).ready(function() {
-  $("form#numberForm").submit(function(event) {
+  $("input#number").keyup(function() {
     var number = parseInt($("input#number").val());
 
     if (number < 1 || number > 3999 ) {
-      alert("These numbers are theoretically impossible at this point.");
+      $("#results span").text("This number is theoretically impossible at present.");
+      $("#results").bigtext();
       return false;
     }
 
     var result = convert(number);
 
-    $("#results").text(result);
+    $("#results span").text(result);
+    $("#results").bigtext();
 
-    event.preventDefault();
   });
 });
