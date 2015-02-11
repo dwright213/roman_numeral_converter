@@ -65,4 +65,9 @@ $(document).ready(function() {
     $("#results").bigtext();
 
   });
+
+  $("form#numberForm").submit(function(event) {
+    event.preventDefault();
+  });
+
 });
